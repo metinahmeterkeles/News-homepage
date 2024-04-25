@@ -1,0 +1,179 @@
+.Main {
+  width: 100%;
+  height: 511px;
+
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 300px 183px;
+  row-gap: 28px;
+  column-gap: 30px;
+
+  &:nth-child(5) {
+    margin-top: 20px;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-title {
+    width: 88px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 24px;
+
+    @include font-heading-l;
+    color: $color-yellow;
+  }
+
+  &-news {
+    width: 302px;
+    height: 374px;
+    margin: 34px 24px 31px 24px;
+
+    &-container {
+      width: 302px;
+      height: 84px;
+      margin-bottom: 29px;
+
+      &:nth-last-child(1) {
+        margin-top: 31px;
+      }
+
+      &:nth-last-child(3) {
+        margin-top: 31px;
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+
+      &-title {
+        @include font-heading-s;
+        color: $color-almost-white;
+        margin-bottom: 8px;
+
+        a {
+          &:hover {
+            color: $color-yellow;
+          }
+        }
+      }
+
+      &-article {
+        color: $color-silver;
+      }
+    }
+  }
+
+  &-header {
+    color: $color-dark-space-blue;
+    @include font-heading-xl;
+  }
+
+  &-article {
+    color: $color-gunmetal;
+    margin-bottom: 29px;
+  }
+
+  &-button {
+    width: 185px;
+    height: 48px;
+    color: $color-almost-white;
+    background-color: $color-light-vermillion;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-dark-space-blue;
+    }
+  }
+
+  &-footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 43px;
+
+    display: flex;
+    gap: 24px;
+    img {
+      width: 100px;
+      height: 127px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+
+    &-article {
+      width: 226px;
+      height: 129px;
+
+      &-number {
+        width: 38px;
+        height: 32px;
+        margin-bottom: 12px;
+        @include font-heading-m;
+        color: $color-silver;
+      }
+
+      &-title {
+        margin-bottom: 9px;
+        @include font-heading-xs;
+        color: $color-dark-space-blue;
+
+        &:hover {
+          color: $color-light-vermillion;
+        }
+      }
+
+      &-content {
+        color: $color-gunmetal;
+      }
+    }
+  }
+}
+
+.rectangle {
+  width: 302px;
+  border: 1px solid #5e607a;
+}
+
+.grid {
+  &-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  &-2 {
+    background-color: $color-dark-space-blue;
+    color: #fff;
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-3a {
+    width: 350px;
+    height: 182px;
+    background-color: transparent;
+    grid-column: 1/2;
+  }
+
+  &-3b {
+    width: 350px;
+    height: 182px;
+    background-color: transparent;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &-4 {
+    width: 350px;
+    height: 129px;
+  }
+}
+
+.mt {
+  margin-top: 31px;
+}

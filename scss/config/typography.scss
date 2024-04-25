@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Inter"; /* Fontun adı */
+  src: url("../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype"); /* Font dosyasının yolu ve türü */
+}
+
+@mixin font-heading-xl {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+@mixin font-heading-l {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@mixin font-heading-m {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin font-heading-s {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin font-heading-xs {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin font-heading-body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}

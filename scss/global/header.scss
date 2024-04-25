@@ -1,0 +1,26 @@
+.Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55.1px;
+  position: relative;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+
+    width: 431px;
+    height: 26px;
+    color: $color-gunmetal;
+
+    a {
+      &:first-child {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.025);
+      }
+      &:hover {
+        color: $color-light-vermillion;
+      }
+    }
+  }
+}
